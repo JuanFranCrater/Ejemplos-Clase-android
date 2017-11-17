@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RelativeLayoutMaterial</string>
+    <string name="txtTypeVisit">入力タイプ</string>
+    <string name="txtMonument">大聖堂</string>
+    <string name="txtDateVisit">訪問日</string>
+    <string name="btnReserved">予約</string>
+    <string name="btnBuy">今すぐ購入</string>
+    <string name="contentImgCity">"マラガ大聖堂 "</string>
+    <string name="contentImgFavorites">"お気に入り "</string>
+    <string name="txvTitulo">計算機</string>
+</resources>

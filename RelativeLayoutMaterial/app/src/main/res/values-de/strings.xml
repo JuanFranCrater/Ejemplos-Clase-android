@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RelativeLayoutMaterial</string>
+    <string name="btnBuy">käuflich erwerben</string>
+    <string name="btnReserved">zurückbehalten</string>
+    <string name="txtDateVisit">Besuchsdatum</string>
+    <string name="txtMonument">Hauptkirche</string>
+    <string name="txtTypeVisit">Art des Eintrages Wagen Frankfurt</string>
+    <string name="contentImgCity">Khathedral von Malaga</string>
+    <string name="contentImgFavorites">Favoriten</string>
+    <string name="txvTitulo">Taschenrechner</string>
+</resources>

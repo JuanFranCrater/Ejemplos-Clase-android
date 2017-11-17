@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">RelativeLayoutMaterial</string>
+    <string name="txtMonument">Catedral</string>
+    <string name="txtDateVisit">Fecha visita</string>
+    <string name="txtTypeVisit">Tipo Entrada</string>
+    <string name="btnReserved">Reservar</string>
+    <string name="btnBuy">Comprar</string>
+    <string name="contentImgCity">Catedral de Malaga</string>
+    <string name="contentImgFavorites">Favoritos</string>
+    <string name="btnPlus" translatable="false">+</string>
+    <string name="btnMinus" translatable="false">-</string>
+    <string name="btnMultiplication" translatable="false">*</string>
+    <string name="btnSplit" translatable="false">/</string>
+    <string name="btnUno" translatable="false">1</string>
+    <string name="btnDos" translatable="false">2</string>
+    <string name="btnTres" translatable="false">3</string>
+    <string name="btnCuatro" translatable="false">4</string>
+    <string name="btnCinco" translatable="false">5</string>
+    <string name="btnSeis" translatable="false">6</string>
+    <string name="btnSiete" translatable="false">7</string>
+    <string name="btnOcho" translatable="false">8</string>
+    <string name="btnNueve" translatable="false">9</string>
+    <string name="btnZero" translatable="false">0</string>
+    <string name="btnDot" translatable="false">.</string>
+    <string name="txvTitulo">Calculadora</string>
+</resources>
