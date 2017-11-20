@@ -1,11 +1,9 @@
-package com.example.staticfragments;
+package com.example.dynamicfragment;
 
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,6 +15,10 @@ import android.widget.TextView;
  */
 
 public class FragmentB extends Fragment {
+
+    private TextView txvMessage;
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -24,8 +26,16 @@ public class FragmentB extends Fragment {
         txvMessage=view.findViewById(R.id.txvMessage);
         return view;
     }
-    private TextView txvMessage;
-    public void changeTextAndSize(String message,int size)
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+            Bundle bundle=getArguments();
+            if(bundle!=null)
+            changeTextAndSize(bundle.getString("message"),bundle.getInt("size"));
+    }
+
+    public void changeTextAndSize(String message, int size)
     {
         txvMessage.setText(message);
         txvMessage.setTextSize(size);
@@ -57,6 +67,7 @@ public class FragmentB extends Fragment {
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
+
         Log.d(this.getClass().getName(), "OnCreate");
         super.onCreate(savedInstanceState);
     }

@@ -1,20 +1,20 @@
 package com.example.staticfragments;
 
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
+import android.app.Fragment;
 import android.os.Bundle;
 import android.util.Log;
 
-public class MainActivity extends AppCompatActivity implements FragmentA.FragmentAListener{
+public class MainActivity extends Activity implements FragmentA.FragmentAListener{
 
-    private Fragment fragmentb,fragmentc;
+    private Fragment fragmentb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        fragmentb=getSupportFragmentManager().findFragmentById(R.id.fragmentB);
+        fragmentb=getFragmentManager().findFragmentById(R.id.fragmentB);
 
-        fragmentc=getSupportFragmentManager().findFragmentById(R.id.fragmentC);
+
     }
 
     @Override
