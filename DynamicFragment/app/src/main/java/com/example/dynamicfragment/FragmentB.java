@@ -17,9 +17,9 @@ import android.widget.TextView;
 public class FragmentB extends Fragment {
 
     private TextView txvMessage;
-//    private String message;
-//    private int size;
-    private View rootView;
+    private String message;
+   private int size;
+  // private View rootView; //Util cuando tenermos un mapa
 
     /**
      *  PATRÓN FACTORY, QUE ES UNA SIMPLIFICACION DEL PATRÓN BUILDER/CREATOR
@@ -52,9 +52,11 @@ public class FragmentB extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         Log.d(this.getClass().getName(),"Fragment: onCreateView()");
-        rootView = inflater.inflate(R.layout.fragment_b,container,false);
-        txvMessage=rootView.findViewById(R.id.txvMessage);
-        return rootView;
+        View view = inflater.inflate(R.layout.fragment_b,container,false);
+
+            txvMessage = view.findViewById(R.id.txvMessage);
+
+        return view;
     }
 
     @Override
@@ -65,11 +67,11 @@ public class FragmentB extends Fragment {
             if(savedInstanceState==null) //No hay cambio de configuracion, se ejecuta por primera vez
             {
                 if (bundle != null) { //Si hay parámetro se asigna
-                    //message = bundle.getString("message");
-                    //size = bundle.getInt("size");
+                    message = bundle.getString("message");
+                    size = bundle.getInt("size");
                 }
             }
-         //   changeTextAndSize(message,size);
+           changeTextAndSize(message,size);
     }
 
     public void changeTextAndSize(String message, int size)
