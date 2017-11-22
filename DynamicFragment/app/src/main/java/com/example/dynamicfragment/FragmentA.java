@@ -25,6 +25,7 @@ public class FragmentA extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        Log.d(this.getClass().getName(),"Fragment: onCreateView()");
         View view = inflater.inflate(R.layout.fragment_a,container,false);
         edtMessage=view.findViewById(R.id.edtMessage);
         btnSize=view.findViewById(R.id.btnSize);
@@ -34,6 +35,7 @@ public class FragmentA extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        Log.d(this.getClass().getName(),"Fragment: onViewCreated()");
         super.onViewCreated(view, savedInstanceState);
         btnSize.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -22,6 +22,7 @@ public class FragmentB extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        Log.d(this.getClass().getName(),"Fragment: onCreateView()");
         View view = inflater.inflate(R.layout.fragment_b,container,false);
         txvMessage=view.findViewById(R.id.txvMessage);
         return view;
@@ -30,6 +31,7 @@ public class FragmentB extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Log.d(this.getClass().getName(),"Fragment: onViewCreated()");
             Bundle bundle=getArguments();
             if(bundle!=null)
             changeTextAndSize(bundle.getString("message"),bundle.getInt("size"));
@@ -51,6 +53,7 @@ public class FragmentB extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
         if(savedInstanceState!=null) {
             txvMessage.setText(savedInstanceState.getString("message"));
             txvMessage.setTextSize(savedInstanceState.getFloat("size"));
@@ -88,5 +91,20 @@ public class FragmentB extends Fragment {
     public void onDestroy() {
         super.onDestroy();
         Log.d(this.getClass().getName(), "OnDestroy");
+    }
+
+    /**
+     *  PATRÓN FACTORY, QUE ES UNA SIMPLIFICACION DEL PATRÓN BUILDER/CREATOR
+     * @param bnd
+     * @return
+     */
+    public static Fragment newInstance(Bundle bnd) {
+        FragmentB fragmentB = new FragmentB();
+        if(bnd!=null)
+        {
+            fragmentB.setArguments(bnd);
+        }
+        return fragmentB;
+
     }
 }
