@@ -17,7 +17,35 @@ import android.widget.TextView;
 public class FragmentB extends Fragment {
 
     private TextView txvMessage;
+    private String message;
+    private int size;
 
+    /**
+     *  PATRÓN FACTORY, QUE ES UNA SIMPLIFICACION DEL PATRÓN BUILDER/CREATOR
+     * @param bnd
+     * @return
+     */
+    public static Fragment newInstance(Bundle bnd) {
+        FragmentB fragmentB = new FragmentB();
+        if(bnd!=null)
+        {
+            fragmentB.setArguments(bnd);
+        }
+        return fragmentB;
+
+    }
+
+    /**
+     * Atención: para que le estado dinámico de un fragment sea permanetne ante un cambio de
+     * confiugración usar setRetainInstance();
+     * @param savedInstanceState
+     */
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+
+        setRetainInstance(true);
+        super.onCreate(savedInstanceState);
+    }
 
     @Nullable
     @Override
@@ -33,8 +61,14 @@ public class FragmentB extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         Log.d(this.getClass().getName(),"Fragment: onViewCreated()");
             Bundle bundle=getArguments();
-            if(bundle!=null)
-            changeTextAndSize(bundle.getString("message"),bundle.getInt("size"));
+            if(savedInstanceState==null) //No hay cambio de configuracion, se ejecuta por primera vez
+            {
+                if (bundle != null) { //Si hay parámetro se asigna
+                    message = bundle.getString("message");
+                    size = bundle.getInt("size");
+                }
+            }
+            changeTextAndSize(message,size);
     }
 
     public void changeTextAndSize(String message, int size)
@@ -42,23 +76,27 @@ public class FragmentB extends Fragment {
         txvMessage.setText(message);
         txvMessage.setTextSize(size);
     }
-
+/*
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        if (savedInstanceState != null) {
+            txvMessage.setText(savedInstanceState.getString("message"));
+            txvMessage.setTextSize(savedInstanceState.getFloat("size"));
+        }
+    }
+    */
+    /*
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putString("message",txvMessage.getText().toString());
         outState.putFloat("size",  txvMessage.getTextSize()/getResources().getDisplayMetrics().scaledDensity);
     }
+*/
 
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
 
-        if(savedInstanceState!=null) {
-            txvMessage.setText(savedInstanceState.getString("message"));
-            txvMessage.setTextSize(savedInstanceState.getFloat("size"));
-        }
-    }
+
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
@@ -68,12 +106,7 @@ public class FragmentB extends Fragment {
         }
     }
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
 
-        Log.d(this.getClass().getName(), "OnCreate");
-        super.onCreate(savedInstanceState);
-    }
     @Override
     public void onStart() {
         super.onStart();
@@ -93,18 +126,5 @@ public class FragmentB extends Fragment {
         Log.d(this.getClass().getName(), "OnDestroy");
     }
 
-    /**
-     *  PATRÓN FACTORY, QUE ES UNA SIMPLIFICACION DEL PATRÓN BUILDER/CREATOR
-     * @param bnd
-     * @return
-     */
-    public static Fragment newInstance(Bundle bnd) {
-        FragmentB fragmentB = new FragmentB();
-        if(bnd!=null)
-        {
-            fragmentB.setArguments(bnd);
-        }
-        return fragmentB;
 
-    }
 }
