@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/android.R.id.content">
+
+    <ImageView
+        android:id="@+id/imgInformacion"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/inventory" />
+
+
+    <TextView
+        android:id="@+id/txvNombre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/txvName"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/imgInformacion" />
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvNombre"
+        app:layout_constraintStart_toEndOf="@+id/barrera" />
+
+
+    <TextView
+        android:id="@+id/txvSerial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/txvSerialP"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/txvNombre" />
+    <EditText
+        android:id="@+id/edtSerial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvSerial"
+        app:layout_constraintStart_toEndOf="@+id/barrera" />
+
+
+    <TextView
+        android:id="@+id/txvVendedor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/txvVendedorP"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/txvSerial" />
+    <EditText
+        android:id="@+id/edtVendedor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvVendedor"
+        app:layout_constraintStart_toEndOf="@+id/barrera" />
+
+
+    <TextView
+        android:id="@+id/txvModelo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/txvModeloP"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/txvVendedor" />
+    <EditText
+        android:id="@+id/edtModelo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvModelo"
+        app:layout_constraintStart_toEndOf="@+id/barrera" />
+
+
+    <TextView
+        android:id="@+id/txvCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/txvCategoriaP"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/txvModelo" />
+    <Spinner
+        android:id="@+id/spnCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toEndOf="@+id/barrera"
+        app:layout_constraintTop_toTopOf="@+id/txvCategoria"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txvSubcategoria"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/txvSubCategoriaP"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/txvCategoria" />
+    <Spinner
+        android:id="@+id/spnSubcategoria"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toEndOf="@+id/barrera"
+        app:layout_constraintTop_toTopOf="@+id/txvSubcategoria"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/txvTipo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/txvTipoP"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/txvSubcategoria" />
+    <Spinner
+        android:id="@+id/spnTipo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toEndOf="@+id/barrera"
+        app:layout_constraintTop_toTopOf="@+id/txvTipo"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/txvDescripcionP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/txvDescripcion"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/txvTipo" />
+    <EditText
+        android:id="@+id/edtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        app:layout_constraintStart_toEndOf="@+id/barrera"
+        app:layout_constraintTop_toBottomOf="@+id/txvDescripcion"/>
+
+
+    <TextView
+        android:id="@+id/txvPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/txvPrecioP"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/edtDescripcion" />
+
+    <EditText
+        android:id="@+id/edtPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/barrera"
+        app:layout_constraintTop_toTopOf="@+id/txvPrecio" />
+
+
+    <TextView
+        android:id="@+id/txvFechaCompra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/txvFCompraP"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/txvPrecio" />
+    <EditText
+        android:id="@+id/edtFechaCompra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="datetime"
+        app:layout_constraintStart_toEndOf="@+id/barrera"
+        app:layout_constraintTop_toTopOf="@+id/txvFechaCompra"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/txvUrl"
+        android:layout_marginTop="40dp"
+        android:text="@string/txvUrlP"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/txvFechaCompra" />
+    <EditText
+        android:id="@+id/edtUrl"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:inputType="textUri"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvUrl"
+        app:layout_constraintEnd_toEndOf="@id/edtFechaCompra"
+        app:layout_constraintStart_toEndOf="@id/txvUrl" />
+
+
+    <TextView
+        android:id="@+id/txvNotas"
+        android:text="@string/txvNotasP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/txvUrl" />
+    <EditText
+        android:id="@+id/edtNotas"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/edtUrl"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/txvNotas" />
+
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="txvDescripcion,txvSubcategoria,txvModelo,txvVendedor,txvNombre,txvPrecio,txvTipo,txvCategoria,txvSerial,txvFechaCompra"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+</ScrollView>

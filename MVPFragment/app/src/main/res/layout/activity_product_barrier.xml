@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/android.R.id.content">
+
+    <EditText
+        android:id="@+id/edtVendedorP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvVendedorP"
+        app:layout_constraintStart_toEndOf="@+id/br"
+        app:layout_constraintEnd_toStartOf="@+id/glIzquierda" />
+
+
+    <EditText
+        android:id="@+id/edtModeloP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvModeloP"
+        app:layout_constraintStart_toEndOf="@+id/br"
+        app:layout_constraintEnd_toStartOf="@+id/glIzquierda" />
+
+    <EditText
+        android:id="@+id/edtNombreP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/br"
+        app:layout_constraintTop_toBottomOf="@+id/imgProducto"
+        app:layout_constraintEnd_toStartOf="@+id/glIzquierda" />
+
+    <EditText
+        android:id="@+id/edtSerialP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvSerialP"
+        app:layout_constraintStart_toEndOf="@+id/br"
+        app:layout_constraintEnd_toStartOf="@+id/glIzquierda"/>
+
+    <EditText
+        android:id="@+id/edtDescripcionP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvDescripcionP"
+        app:layout_constraintStart_toEndOf="@+id/br"
+        app:layout_constraintEnd_toStartOf="@+id/glIzquierda" />
+
+    <EditText
+        android:id="@+id/edtPrecioP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvPrecioP"
+        app:layout_constraintStart_toEndOf="@+id/br"
+        app:layout_constraintEnd_toStartOf="@+id/glIzquierda" />
+
+    <EditText
+        android:id="@+id/edtFCompraP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvFCompraP"
+        app:layout_constraintStart_toEndOf="@+id/br"
+        app:layout_constraintEnd_toStartOf="@+id/glIzquierda"/>
+
+    <EditText
+        android:id="@+id/edtUrlP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvUrlP"
+        app:layout_constraintStart_toEndOf="@+id/br"
+        app:layout_constraintEnd_toStartOf="@+id/glIzquierda"/>
+
+    <EditText
+        android:id="@+id/edtNotasP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvNotasP"
+        app:layout_constraintStart_toEndOf="@+id/br"
+        app:layout_constraintEnd_toStartOf="@+id/glIzquierda"/>
+
+    <TextView
+        android:id="@+id/txvVendedorP"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txvVendedorP"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/glDerecha"
+        app:layout_constraintTop_toBottomOf="@+id/txvSerialP" />
+
+    <TextView
+        android:id="@+id/txvNombreP"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/tvxNombreP"
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edtNombreP"
+        app:layout_constraintStart_toStartOf="@+id/glDerecha" />
+
+    <TextView
+        android:id="@+id/txvModeloP"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txvModeloP"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/glDerecha"
+        app:layout_constraintTop_toBottomOf="@+id/txvVendedorP" />
+
+    <TextView
+        android:id="@+id/txvSerialP"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txvSerialP"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/glDerecha"
+        app:layout_constraintTop_toBottomOf="@+id/txvNombreP" />
+
+
+    <TextView
+        android:id="@+id/txvCategoriaP"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/txvCategoriaP"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/glDerecha"
+        app:layout_constraintTop_toBottomOf="@+id/txvModeloP" />
+
+    <TextView
+        android:id="@+id/txvSubCategoriaP"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/txvSubCategoriaP"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/glDerecha"
+        app:layout_constraintTop_toBottomOf="@+id/txvCategoriaP" />
+
+    <TextView
+        android:id="@+id/txvTipoP"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/txvTipoP"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/glDerecha"
+        app:layout_constraintTop_toBottomOf="@+id/txvSubCategoriaP" />
+
+    <TextView
+        android:id="@+id/txvDescripcionP"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txvDescripcionP"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/glDerecha"
+        app:layout_constraintTop_toBottomOf="@+id/txvTipoP" />
+
+    <TextView
+        android:id="@+id/txvPrecioP"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txvPrecioP"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/glDerecha"
+        app:layout_constraintTop_toBottomOf="@+id/txvDescripcionP" />
+
+    <TextView
+        android:id="@+id/txvFCompraP"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txvFCompraP"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/glDerecha"
+        app:layout_constraintTop_toBottomOf="@+id/txvPrecioP" />
+
+    <TextView
+        android:id="@+id/txvUrlP"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txvUrlP"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/glDerecha"
+        app:layout_constraintTop_toBottomOf="@+id/txvFCompraP" />
+
+    <TextView
+        android:id="@+id/txvNotasP"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txvNotasP"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/glDerecha"
+        app:layout_constraintTop_toBottomOf="@+id/txvUrlP" />
+
+
+    <ImageView
+        android:id="@+id/imgProducto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/imgProducto"
+        app:layout_constraintDimensionRatio="3:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/product" />
+
+    <Spinner
+        android:id="@+id/spnCategoriaP"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/br"
+        app:layout_constraintTop_toTopOf="@+id/txvCategoriaP"
+        app:layout_constraintEnd_toStartOf="@+id/glIzquierda"
+        android:entries="@array/spinnerValuesCategorias"/>
+
+    <Spinner
+        android:id="@+id/spnTipoP"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/br"
+        app:layout_constraintTop_toTopOf="@+id/txvTipoP"
+        app:layout_constraintEnd_toStartOf="@+id/glIzquierda"
+        android:entries="@array/spinnerValueSubCategorias"/>
+
+    <Spinner
+        android:id="@+id/spnSubCategoriaP"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/br"
+        app:layout_constraintTop_toTopOf="@+id/txvSubCategoriaP"
+        app:layout_constraintEnd_toStartOf="@+id/glIzquierda"
+        android:entries="@array/spinnerValuesTipos"/>
+
+    <android.support.constraint.Barrier
+        android:id="@+id/br"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="txvNombreP,txvSerialP,txvModeloP,txvVendedorP,txvCategoriaP,txvSubCategoriaP,txvTipoP" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/glDerecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/glIzquierda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+
+</android.support.constraint.ConstraintLayout>

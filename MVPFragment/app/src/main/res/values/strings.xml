@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">InventoryMVP</string>
+    <string name="tvxUser">Nombre de usuario/email:</string>
+    <string name="tvxSignIn">Acceder</string>
+    <string name="tvxPassword">Contraseña:</string>
+    <string name="chkRemember">Recuerdame</string>
+    <string name="tvxSingUp"><u>Registrate</u></string>
+    <string name="btnFacebookSign">Conectar con Facebook</string>
+    <string name="btnGoogleSign">Conectar con Google</string>
+    <string name="txvName">Nombre</string>
+    <string name="txvDescription">Descripcion</string>
+    <string name="txvDataCreate">Fecha creacion</string>
+    <string name="btnChange">Cambiar estado</string>
+    <string name="imgProducto">imgProducto</string>
+    <string name="tvxNombreP">Nombre:</string>
+    <string name="txvSerialP">Serial:</string>
+    <string name="txvVendedorP">Vendedor:</string>
+    <string name="txvModeloP">Modelo:</string>
+    <string name="txvCategoriaP">Categoria:</string>
+    <string name="txvSubCategoriaP">SubCategoria:</string>
+    <string name="txvTipoP">Tipo:</string>
+    <string name="txvDescripcionP">Descripcion:</string>
+    <string name="txvPrecioP">Precio:</string>
+    <string name="txvFCompraP">F.compra:</string>
+    <string name="txvUrlP" translatable="false">Url:</string>
+    <string name="txvNotasP">Notas:</string>
+    <string name="Categoria1">Categoria 1</string>
+    <string name="Categoria2">Categoria 2</string>
+    <string name="Categoria3">Categoria 3</string>
+    <string name="Categoria4">Categoria 4</string>
+    <string name="SubCategoria1">SubCategoria 1</string>
+    <string name="SubCategoria2">SubCategoria 2</string>
+    <string name="SubCategoria3">SubCategoria 3</string>
+    <string name="SubCategoria4">SubCategoria 4</string>
+    <string name="Tipo1">Tipo 1</string>
+    <string name="Tipo2">Tipo 2</string>
+    <string name="Tipo3">Tipo 3</string>
+    <string name="Tipo4">Tipo 4</string>
+    <string name="txvDescripcion">Descripcion</string>
+    <string name="switchOn" translatable="false">On</string>
+    <string name="switchOff" translatable="false">Off</string>
+    <string name="txvSectorDefault">Sector por defecto</string>
+
+
+    <string name="action_save">Salvar</string>
+    <string name="action_general_setting">Ajustes Generales</string>
+    <string name="action_account_setting">Ajustes de Cuenta</string>
+
+    <string name="edtName">Escriba el Nombre</string>
+    <string name="edtShorname">Nombre Corto</string>
+    <string name="edtDescription">Escriba una descripcion</string>
+
+
+</resources>

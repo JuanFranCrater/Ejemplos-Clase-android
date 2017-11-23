@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.inventorymaterial.ui.login.LoginViewImpl"
+    android:orientation="vertical"
+    android:padding="@dimen/lly_login_padding"
+    android:background="@color/colorPrimary"
+    android:id="@+id/android.R.id.content">
+
+
+    <TextView
+        android:id="@+id/txvSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvxSignIn"
+        android:layout_marginBottom="@dimen/txvSignIn_margin"
+        android:textAppearance="@android:style/TextAppearance.Large.Inverse"/>
+
+    <TextView
+        android:id="@+id/txvUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edtUser"
+        android:text="@string/tvxUser"
+        android:textAppearance="@android:style/TextAppearance.Medium.Inverse" />
+
+    <EditText
+        android:id="@+id/edtUser"
+        style="@style/LoginEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@drawable/shape_editext"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txvPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvxPassword"
+        android:labelFor="@+id/edtPassword"
+        android:textAppearance="@android:style/TextAppearance.Medium.Inverse"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        style="@style/LoginEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/shape_editext"
+        android:text="" />
+
+    <LinearLayout
+        android:id="@+id/IlySignOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <CheckBox
+            android:id="@+id/chkRemember"
+            style="@style/GreyCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:checked="false"
+            android:text="@string/chkRemember"
+            android:theme="@style/GreyCheckbox" />
+
+
+        <TextView
+            android:id="@+id/txvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/tvxSingUp"
+            android:textAlignment="textEnd"
+            android:textAppearance="@android:style/TextAppearance.Holo.Medium.Inverse" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/btnSignIn_margin"
+        android:layout_marginLeft="@dimen/btnSignIn_margin"
+        android:layout_marginRight="@dimen/btnSignIn_margin"
+        android:layout_marginTop="@dimen/txvSignIn_margin"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/tvxSignIn"
+        style="@style/Widget.Button.Transparent"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnGoogleSign"
+        style="@style/Widget.Button.Transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/btnGoogle"
+        android:background="@color/btnGoogle"
+        android:drawableStart="@drawable/ic_google"
+        android:text="@string/btnGoogleSign"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnFacebookSign"
+        style="@style/Widget.Button.Transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btnFacebook"
+        android:drawableStart="@drawable/ic_facebook"
+        android:text="@string/btnFacebookSign"
+        android:textAllCaps="false" />
+
+</LinearLayout>

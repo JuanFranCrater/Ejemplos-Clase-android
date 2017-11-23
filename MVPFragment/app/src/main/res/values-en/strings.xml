@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Inventory</string>
+    <string name="tvxUser">Username/email:</string>
+    <string name="tvxSignIn">Sign In</string>
+    <string name="tvxPassword">Password:</string>
+    <string name="chkRemember">Remerber me</string>
+    <string name="tvxSingUp"><u>Sing Up</u></string>
+    <string name="btnFacebookSign">Sign in with Facebook</string>
+    <string name="btnGoogleSign">Sign in with Google</string>
+    <string name="btnChange">Change State</string>
+    <string name="txvDataCreate">Date create</string>
+    <string name="txvDescription">Description</string>
+    <string name="txvName">Name</string>
+    <string name="imgProducto">imgProducto</string>
+    <string name="tvxNombreP">Name:</string>
+    <string name="txvVendedorP">Seller:</string>
+    <string name="txvModeloP">Model:</string>
+    <string name="txvCategoriaP">Categorie:</string>
+    <string name="txvSubCategoriaP">SubCategorie:</string>
+    <string name="txvTipoP">Type:</string>
+    <string name="txvPrecioP">Price:</string>
+    <string name="txvFCompraP">Buy Date:</string>
+    <string name="txvNotasP">Notes:</string>
+    <string name="txvSerialP">Serial:</string>
+    <string name="txvDescripcionP">Description:</string>
+    <string name="Categoria1">Categorie 1</string>
+    <string name="Categoria2">Categorie 2</string>
+    <string name="SubCategoria4">SubCategorie 4</string>
+    <string name="Categoria3">Categorie 3</string>
+    <string name="Categoria4">Categorie 4</string>
+    <string name="SubCategoria1">SubCategorie 1</string>
+    <string name="SubCategoria2">SubCategorie 2</string>
+    <string name="SubCategoria3">SubCategorie 3</string>
+    <string name="Tipo2">Type 2</string>
+    <string name="Tipo1">Type 1</string>
+    <string name="Tipo3">Type 3</string>
+    <string name="Tipo4">Type 4</string>
+    <string name="txvDescripcion">Description</string>
+    <string name="txvSectorDefault">Default Sector</string>
+    <string name="menu_save">Save</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_categoria_general">Preferencias Generales</string>
+    <string name="pref_title_showimage">Mostrar Imagen</string>
+    <string name="pref_description_showimage">Mostrar imagenes en el listados de la aplicacion</string>
+    <string name="pref_summary_numcolumn">Número de columnas que se mostrarán en los listados</string>
+    <string name="pref_title_numcolumn">Número de columnas</string>
+    <string name="pref_title_aboutus">Sobre Nosotros</string>
+    <string-array name="pref_entries_numcolumn">
+        <item>1 columna</item>
+        <item>2 columna</item>
+        <item>3 columna</item>
+        <item>4 columna</item>
+    </string-array>
+    <string-array name="pref_entryvalue_numcolumn">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string name="pref_title_user_name" >Usuario</string>
+    <string name="pref_summary_user_name" >Nombre del usuario de la aplicacion</string>
+    <string name="pref_title_remember_user" >Recordar Usuario</string>
+    <string name="pref_summary_remember_user" >Indicar se quiere almacenar el usuario</string>
+    <string name="pref_title_user_password" >Contraseña</string>
+    <string name="pref_summary_user_password" >Contraseña del usuario de la aplicacion</string>
+
+</resources>

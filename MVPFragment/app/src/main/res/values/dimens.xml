@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lly_login_padding">32dp</dimen>
+    <dimen name="txvSignIn_margin">16dp</dimen>
+    <dimen name="edtUser">50dp</dimen>
+    <dimen name="btnSignIn_margin">60dp</dimen>
+    <dimen name="llySingOption">20dp</dimen>
+    <dimen name="btnGoogle">5dp</dimen>
+    <dimen name="imgDashboardHeith">0dp</dimen>
+    <dimen name="imgDashboardWidth">0dp</dimen>
+    <dimen name="imgDashboardMargin">10dp</dimen>
+    <dimen name="letter_icon_size">48dp</dimen>
+    <dimen name="list_top_padding">8dp</dimen>
+    <dimen name="list_primary_text">16sp</dimen>
+    <dimen name="list_secondary_text">14sp</dimen>
+    <dimen name="switchHeith">48dp</dimen>
+    <dimen name="switchWidth">48dp</dimen>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <resources>
+        <string-array name="spinnerValuesCategorias">
+            <item>@string/Categoria1</item>
+            <item>@string/Categoria2</item>
+            <item>@string/Categoria3</item>
+            <item>@string/Categoria4</item>
+        </string-array>
+    <string-array name="spinnerValueSubCategorias">
+        <item>@string/SubCategoria1</item>
+        <item>@string/SubCategoria2</item>
+        <item>@string/SubCategoria3</item>
+        <item>@string/SubCategoria4</item>
+    </string-array>
+    <string-array name="spinnerValuesTipos">
+        <item>@string/Tipo1</item>
+        <item>@string/Tipo2</item>
+        <item>@string/Tipo3</item>
+        <item>@string/Tipo4</item>
+    </string-array>
+
+
+</resources>
