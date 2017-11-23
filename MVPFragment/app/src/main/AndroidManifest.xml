@@ -28,7 +28,6 @@
         <activity android:name=".ui.prefs.GeneralSettingActivity" />
         <activity android:name=".ui.prefs.AccountSettingActivity" />
         <activity android:name=".ui.about.AboutUsActivity" />
-        <activity android:name=".ui.dependency.AddDependencyActivity"></activity>
     </application>
 
 </manifest>

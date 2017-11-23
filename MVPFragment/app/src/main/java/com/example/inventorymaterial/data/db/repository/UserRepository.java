@@ -69,12 +69,10 @@ public class UserRepository {
     {
     return users.contains(user);
     }
-    public boolean validateCredentials(String user, String password)
-    {
-        if()
-        {
-
-        }
+    public boolean validateCredentials(String user, String password) {
+        //if()
+        //{
+        //}
         return true;
     }
 }

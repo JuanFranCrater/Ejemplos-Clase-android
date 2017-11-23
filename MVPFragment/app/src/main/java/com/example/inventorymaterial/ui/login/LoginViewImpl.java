@@ -32,6 +32,7 @@ public class LoginViewImpl extends BaseActivity implements LoginView {
             public void onClick(View v) {
                 if(v==btnSingIn){
                     loginPresenter.validateCredentials("Lourdes","Lourdes");
+                    navigateToHome();
                 }
         }
     });

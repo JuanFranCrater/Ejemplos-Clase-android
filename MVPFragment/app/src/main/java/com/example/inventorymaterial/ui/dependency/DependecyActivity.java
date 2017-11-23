@@ -1,52 +1,63 @@
 package com.example.inventorymaterial.ui.dependency;
 
-import android.content.Intent;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.widget.ListView;
 
 import com.example.inventorymaterial.R;
-import com.example.inventorymaterial.adapter.DependencyAdapter;
+import com.example.inventorymaterial.ui.base.BaseActivity;
+import com.example.inventorymaterial.ui.dependency.presenter.AddEditDependencyPresenterImpl;
+import com.example.inventorymaterial.ui.dependency.presenter.ListDependencyPresenterImpl;
 
 /**
  * Created by usuario on 25/10/17.
  */
 
-public class DependecyActivity extends AppCompatActivity{
+public class DependecyActivity extends BaseActivity implements ListDependency.ListDependencyListener{
 
-    //private ArrayAdapter<Dependency> dependencies;
-    private DependencyAdapter adapter;
-    private ListView listView;
-    private FloatingActionButton fab;
-    private CoordinatorLayout cord;
+    private ListDependency listDependency;
+    private ListDependencyPresenterImpl listPresenter;
+    private AddEditDependency addeditDependency;
+    private AddEditDependencyPresenterImpl addEditPresenter;
+    private DetailDependency detailDependency;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dependency);
-        //Caso 1 : apater no personalizado
-       // dependencies = new ArrayAdapter(this, android.R.layout.simple_list_item_1, DependencyRepository.getInstance().getDependencies());
-        //getListView().setAdapter(dependencies);
-        //caso 2: Array Adapter personalizado
-        listView= (ListView) findViewById(android.R.id.list);
-        cord=findViewById(R.id.cordL);
-        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
-        fab=findViewById(R.id.fab);
-        setSupportActionBar(toolbar);
-        adapter= new DependencyAdapter(this);
-        listView.setAdapter(adapter);
+        FragmentManager fraMag = getFragmentManager();
+        FragmentTransaction fraTra = fraMag.beginTransaction();
+        //1. Se crea la vista
+        listDependency=(ListDependency) fraMag.findFragmentByTag(ListDependency.TAG);
+        if(listDependency==null)
+        {
+            listDependency=(ListDependency) ListDependency.newInstance(null);
+            fraTra.add(android.R.id.content,listDependency,ListDependency.TAG);
+            fraTra.commit();
 
-        //Al pulsar se visualizará el SnackBar y el FAB se desplazara hacia arriba.
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(DependecyActivity.this,AddDependencyActivity.class));
-            }
-        });
+        }
+        //2. Se crea el presentador, y se le pasa en el constructor la vista correspondiente/su fragment
+        listPresenter = new ListDependencyPresenterImpl(listDependency);
+
+        //3.Si necesitamos, se asigna el presentador a su fragment
+        listDependency.setPresenter(listPresenter);
+
+    }
+
+    @Override
+    public void addNewDependency() {
+        FragmentManager fraMag = getFragmentManager();
+        FragmentTransaction fraTra = fraMag.beginTransaction();
+        addeditDependency = (AddEditDependency)fraMag.findFragmentByTag(AddEditDependency.TAG);
+        if(addeditDependency==null)
+        {
+            addeditDependency= AddEditDependency.newInstance(null);
+            fraTra.replace(android.R.id.content,addeditDependency,AddEditDependency.TAG);
+            fraTra.addToBackStack(null);
+            fraTra.commit();
+        }
 
     }
 }
