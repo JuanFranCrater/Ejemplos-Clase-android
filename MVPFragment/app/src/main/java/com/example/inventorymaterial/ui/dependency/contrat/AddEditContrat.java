@@ -5,10 +5,12 @@ package com.example.inventorymaterial.ui.dependency.contrat;
  */
 
 public interface AddEditContrat {
-    interface View{
+    interface View
+    {
 
     }
-    interface Presenter{
-
+    interface Presenter
+    {
+        void validatedependency();
     }
 }

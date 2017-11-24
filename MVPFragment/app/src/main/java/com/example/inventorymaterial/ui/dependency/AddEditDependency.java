@@ -3,6 +3,7 @@ package com.example.inventorymaterial.ui.dependency;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +30,13 @@ public class AddEditDependency extends Fragment implements AddEditContrat.View {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_add_edit_dependency,container,false);
+        FloatingActionButton fab = rootView.findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                presenter.validateDependency();
+            }
+        });
         if(getArguments()!=null)//es editar
         {
 
