@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.example.inventorymaterial.R;
 import com.example.inventorymaterial.adapter.DependencyAdapter;
+import com.example.inventorymaterial.ui.base.BasePresenter;
 import com.example.inventorymaterial.ui.dependency.contrat.ListDependencyContrat;
 
 /**
@@ -23,6 +24,11 @@ public class ListDependency extends ListFragment implements ListDependencyContra
     public static final String TAG="listdependency";
     private ListDependencyListener callback;
     private ListDependencyContrat.Presenter presenter;
+
+    @Override
+    public void setPresenter(BasePresenter presenter) {
+      this.presenter= (ListDependencyContrat.Presenter) presenter;
+    }
 
     interface ListDependencyListener{
         void addNewDependency();
@@ -72,8 +78,4 @@ public class ListDependency extends ListFragment implements ListDependencyContra
         setListAdapter(new DependencyAdapter(getActivity()));
     }
 
-    @Override
-    public void setPresenter(ListDependencyContrat.Presenter presenter) {
-        this.presenter=presenter;
-    }
 }

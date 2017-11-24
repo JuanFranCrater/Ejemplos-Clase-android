@@ -50,6 +50,10 @@
     <string name="edtName">Escriba el Nombre</string>
     <string name="edtShorname">Nombre Corto</string>
     <string name="edtDescription">Escriba una descripcion</string>
+    <string name="errorDependencyDuplicate">Error Dependency ya existente</string>
+    <string name="errorNameEmpty">No hay nombre</string>
+    <string name="errorShortNameEmpty">Nombre Corto vacio</string>
+    <string name="errorDescriptionEmpty">Descripcion vacia</string>
 
 
 </resources>

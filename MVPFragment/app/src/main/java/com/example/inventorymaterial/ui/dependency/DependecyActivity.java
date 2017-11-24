@@ -58,6 +58,8 @@ public class DependecyActivity extends BaseActivity implements ListDependency.Li
             fraTra.addToBackStack(null);
             fraTra.commit();
         }
+        addEditPresenter= new AddEditDependencyPresenterImpl(addeditDependency);
+        addeditDependency.setPresenter(addEditPresenter);
 
     }
 }
