@@ -3,12 +3,16 @@ package com.example.inventorymaterial.ui.dependency;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.example.inventorymaterial.R;
 import com.example.inventorymaterial.ui.base.BaseActivity;
+import com.example.inventorymaterial.ui.base.BasePresenter;
 import com.example.inventorymaterial.ui.dependency.presenter.AddEditDependencyPresenterImpl;
 import com.example.inventorymaterial.ui.dependency.presenter.ListDependencyPresenterImpl;
+import com.example.inventorymaterial.ui.utils.AddEdit;
 
 /**
  * Created by usuario on 25/10/17.
@@ -17,9 +21,9 @@ import com.example.inventorymaterial.ui.dependency.presenter.ListDependencyPrese
 public class DependecyActivity extends BaseActivity implements ListDependency.ListDependencyListener{
 
     private ListDependency listDependency;
-    private ListDependencyPresenterImpl listPresenter;
+    //private ListDependencyPresenterImpl listPresenter;
     private AddEditDependency addeditDependency;
-    private AddEditDependencyPresenterImpl addEditPresenter;
+    //private AddEditDependencyPresenterImpl addEditPresenter;
     private DetailDependency detailDependency;
 
 
@@ -38,28 +42,31 @@ public class DependecyActivity extends BaseActivity implements ListDependency.Li
             fraTra.commit();
 
         }
+        /*
         //2. Se crea el presentador, y se le pasa en el constructor la vista correspondiente/su fragment
         listPresenter = new ListDependencyPresenterImpl(listDependency);
-
+        */
         //3.Si necesitamos, se asigna el presentador a su fragment
-        listDependency.setPresenter(listPresenter);
-
+            //listDependency.setPresenter(listPresenter);
     }
 
     @Override
-    public void addNewDependency() {
+    public void addNewDependency(Bundle bnd) {
+
         FragmentManager fraMag = getFragmentManager();
         FragmentTransaction fraTra = fraMag.beginTransaction();
         addeditDependency = (AddEditDependency)fraMag.findFragmentByTag(AddEditDependency.TAG);
         if(addeditDependency==null)
         {
-            addeditDependency= AddEditDependency.newInstance(null);
+            addeditDependency = AddEditDependency.newInstance(bnd);
             fraTra.replace(android.R.id.content,addeditDependency,AddEditDependency.TAG);
             fraTra.addToBackStack(null);
             fraTra.commit();
         }
-        addEditPresenter= new AddEditDependencyPresenterImpl(addeditDependency);
-        addeditDependency.setPresenter(addEditPresenter);
+        /*addEditPresenter= new AddEditDependencyPresenterImpl(addeditDependency);
+        */
+      //  addeditDependency.setPresenter(addEditPresenter);
 
     }
+
 }

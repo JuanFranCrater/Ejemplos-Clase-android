@@ -1,5 +1,13 @@
 package com.example.inventorymaterial.ui.utils;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.os.Bundle;
+
+import com.example.inventorymaterial.R;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -8,6 +16,7 @@ import java.util.regex.Pattern;
  */
 
 public final class CommonUtils {
+
     /**
      * Método que comprueba que la contraseña tenga los siguientes requisitos
      * Debe contener al menos un dígito 0-9
@@ -25,6 +34,8 @@ public final class CommonUtils {
                 {6,}	          al menos 6 caracteres
      )
      */
+
+
     public static boolean isPasswordValid(String password)
     {
         Pattern pattern;

@@ -20,14 +20,14 @@ import java.util.ArrayList;
  */
 
 public class DependencyAdapter extends ArrayAdapter<Dependency> {
-    /**
+
+    /** =)=/(=)·Q
      * Se crea una copia del ArrayList que se tiene en DependencyRepository
      * para tener una copia local en el Adapter que se pueda modificar sin cambiar los datos originales
      * @param context
      */
     public DependencyAdapter(@NonNull Context context) {
-        super(context, R.layout.item_dependency, new ArrayList<Dependency>(DependencyRepository.getInstance().getDependencies()));
-        sort(new Dependency.DependencyOrderByShortName());
+        super(context, R.layout.item_dependency, new ArrayList<Dependency>());
     }
 
     @NonNull

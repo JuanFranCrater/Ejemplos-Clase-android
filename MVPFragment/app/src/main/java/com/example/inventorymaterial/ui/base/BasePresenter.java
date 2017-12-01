@@ -6,4 +6,7 @@ package com.example.inventorymaterial.ui.base;
 
 public interface BasePresenter {
 
+   void onDestroy();
+    void delete(Object object);
+
 }

@@ -16,5 +16,5 @@ public interface AddEditInteractor {
 
         void onSuccess();
     }
-    void validateDependency(String nombre, String shortname, String description);
+    void validateDependency(String nombre, String shortname, String description, AddEditInteractor.OnAddDependecyListener listener);
 }

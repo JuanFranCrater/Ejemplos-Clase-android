@@ -54,6 +54,12 @@
     <string name="errorNameEmpty">No hay nombre</string>
     <string name="errorShortNameEmpty">Nombre Corto vacio</string>
     <string name="errorDescriptionEmpty">Descripcion vacia</string>
+    <string name="fragment_listdependency_delete">Eliminar Dependencia</string>
+    <string name="btnOK">Aceptar</string>
+    <string name="btnCancel">Cancelar</string>
+    <string name="successDeleteDependency">Dependency deleted</string>
+    <string name="sort_by_id">Sort by ID</string>
+    <string name="sort_by_name">Sort by Name</string>
 
 
 </resources>

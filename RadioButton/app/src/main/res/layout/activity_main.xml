@@ -37,16 +37,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/rbt_Particular"
-            android:onClick="onRadioButtonClicked"/>
+            android:text="@string/rbt_Particular"/>
 
         <RadioButton
             android:id="@+id/rbtBusiness"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/rbt_Business"
-            android:onClick="onRadioButtonClicked"/>
+            android:text="@string/rbt_Business"/>
 
     </RadioGroup>
 

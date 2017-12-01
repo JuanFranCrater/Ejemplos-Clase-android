@@ -1,5 +1,7 @@
 package com.example.inventorymaterial.data.db.model;
 
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.support.annotation.NonNull;
 
 import java.util.Comparator;
@@ -8,11 +10,19 @@ import java.util.Comparator;
  * Created by usuario on 25/10/17.
  */
 
-public class  Dependency implements Comparable {
+public class  Dependency implements Comparable,Parcelable {
     private int _ID;
     private String name;
     private String shortname;
     private String description;
+    public static String TAG = "Dependency";
+
+    protected Dependency(Parcel in) {
+        _ID = in.readInt();
+        name = in.readString();
+        shortname = in.readString();
+        description = in.readString();
+    }
 
     public int get_ID() {
         return _ID;
@@ -57,16 +67,41 @@ public class  Dependency implements Comparable {
         this.shortname = shortname;
         this.description = description;
     }
+    public static final Creator<Dependency> CREATOR = new Creator<Dependency>() {
+        @Override
+        public Dependency createFromParcel(Parcel in) {
+            return new Dependency(in);
+        }
 
+        @Override
+        public Dependency[] newArray(int size) {
+            return new Dependency[size];
+        }
+    };
+
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeInt(_ID);
+        parcel.writeString(name);
+        parcel.writeString(shortname);
+        parcel.writeString(description);
+
+    }
     @Override
     public int compareTo(@NonNull Object o) {
          /*
         El ArrayList se ordena segun el criterio/s del método compareTo
         de la interfaz Comparable
          */
-        return name.compareTo(((Dependency)o).getName());
+        return shortname.compareTo(((Dependency)o).getShortname());
     }
-   public static class DependencyOrderByShortName implements Comparator<Dependency>
+    public static class DependencyOrderByShortName implements Comparator<Dependency>
     {
         @Override
         public int compare(Dependency d1, Dependency d2) {

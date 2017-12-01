@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+
+    <TextView
+        android:id="@+id/tv_cambiar_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="Cambiar color de botón"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entre 10 y 15"
+        android:theme="@style/RadioButtonLima" />
+
+    <TextView
+        android:id="@+id/tv_cambiar_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="48dp"
+        android:text="Cambiar background"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/rb_lluvia"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_lluvia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@drawable/rb_background_lluvia" />
+
+        <RadioButton
+            android:id="@+id/rb_nublado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@drawable/rb_background_nublado" />
+
+        <RadioButton
+            android:id="@+id/rb_soleado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@drawable/rb_background_soleado" />
+
+        <RadioButton
+            android:id="@+id/rb_torrencial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@drawable/rb_background_torrencial" />
+    </RadioGroup>
+
+</LinearLayout>

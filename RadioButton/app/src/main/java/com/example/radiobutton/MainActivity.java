@@ -3,6 +3,7 @@ package com.example.radiobutton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioGroup;
 
 /**
  * Clase de ejemplo de como funciona RadioButton y RadioGroup
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     //Usamos View para usar la programacion generica, simplicar vamos
     private View contraintParticular;
     private View constraintBussiness;
+    private RadioGroup rgbTypeClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,22 +22,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         contraintParticular=findViewById(R.id.contraintParticular);
         constraintBussiness=findViewById(R.id.constraintBussiness);
-    }
-
-    /**
-     * Método que gestiona el evento onClick en los componentes RadioButton de la Interface
-     * @param view
-     */
-    public void onRadioButtonClicked (View view){
-        switch (view.getId())
-        {
-            case R.id.rbtParticular:
-                viewParticular(true);
-                break;
-            case R.id.rbtBusiness:
-                viewParticular(false);
-                break;
-        }
+        rgbTypeClient=findViewById(R.id.rgbTypeClient);
+        rgbTypeClient.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int id) {
+                switch (id)
+                {
+                    case R.id.rbtParticular:
+                        viewParticular(true);
+                        break;
+                    case R.id.rbtBusiness:
+                        viewParticular(false);
+                        break;
+                }
+            }
+        });
     }
 
     /**
