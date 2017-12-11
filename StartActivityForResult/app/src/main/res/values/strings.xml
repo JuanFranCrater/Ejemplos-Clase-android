@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StartActivityForResult</string>
+    <string name="Surname">Apellido de Usuario</string>
+    <string name="Name">Nombre de Usuario</string>
+    <string name="Message">Introduce una cadena de caracteres</string>
+    <string name="sendMessage">Enviar Cadena</string>
+    <string name="Cancel">Cancelar</string>
+</resources>

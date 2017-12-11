@@ -21,9 +21,9 @@ public class AddEditDependencyInteractorImpl implements AddEditInteractor {
             listener.onShortNameEmptyError();
         } else if (TextUtils.isEmpty(description)) {
             listener.onDescriptionError();
-        } else if(true)//se pregunta si existe en la base de datos
+        } else if(DependencyRepository.getInstance().foundDependency(name, shortname)!=-1)//se pregunta si existe en la base de datos
         {
-            int id=DependencyRepository.getInstance().foundDependency(name.toString(),shortname.toString());
+            int id=DependencyRepository.getInstance().foundDependency(name,shortname);
             if(id==-1)
             {
                 DependencyRepository.getInstance().addDependency(new Dependency(id, name, shortname, description));

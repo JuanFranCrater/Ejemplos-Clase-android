@@ -1,6 +1,7 @@
 package com.example.inventorymaterial;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayout;
@@ -9,9 +10,12 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import com.example.inventorymaterial.data.prefs.AppPreferencesHelper;
 import com.example.inventorymaterial.ui.dependency.DependecyActivity;
 import com.example.inventorymaterial.ui.inventory.InventoryActivity;
+import com.example.inventorymaterial.ui.inventory.InventoryApplication;
 import com.example.inventorymaterial.ui.prefs.AccountSettingActivity;
 import com.example.inventorymaterial.ui.prefs.GeneralSettingActivity;
 import com.example.inventorymaterial.ui.product.ProductActivity;
@@ -115,6 +119,19 @@ public class DashboardActivity extends AppCompatActivity {
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.menu_activity_dashboard,menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        showAppPreferences();
+    }
+
+    private void showAppPreferences() {
+        AppPreferencesHelper sharedPreferences=((InventoryApplication)getApplicationContext()).getAppPreferencesHelper();
+        sharedPreferences.setCurrentUserName("Lolita");
+        String message= "Tu usuario de sesión es "+sharedPreferences.getCurrentUserName();
+        Toast.makeText(this,message, Toast.LENGTH_LONG).show();
     }
 
     @Override
