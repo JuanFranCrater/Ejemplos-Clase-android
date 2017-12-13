@@ -1,0 +1,106 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:17:1-38:12
+INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:17:1-38:12
+INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:17:1-38:12
+INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:17:1-38:12
+MERGED from [com.android.support:design:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/2fe83e33edc59ca770afe28f0c13b209/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/03e6188da2fbe7408f7026eab58fa593/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/d4b804e8b32e87380a29f517b0888c12/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/eaa82dc3fd0ff5577441b11d4734705a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/c6b5cac28c2606a5809e9285a1bf14be/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/eb8cac63a5f57a97c6d050b1b4fbf637/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/877393f58d9b671d91ba2b3f80eb4fde/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/b65ae57309c5a01f0f3df3d1960c31a9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/8fddcd8be97cde8ad0506dc81cd148b8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/48cdc0e761e590e2503dbb32cec9d86f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/eb0a0ad483fffae04942a8c8e39f40ea/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/d22582fd7539391d59c6d9b9702d418b/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/usuario/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/ed83811050497e8767229348d76ee104/AndroidManifest.xml:17:1-24:12
+INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:17:1-38:12
+INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:17:1-38:12
+INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:17:1-38:12
+	package
+		ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:18:5-54
+		INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml
+		INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:20:5-30
+		INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml
+		INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:17:11-69
+	android:versionCode
+		ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:19:5-28
+		INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml
+		INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:22:5-44
+INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:22:5-44
+INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:22:5-44
+MERGED from [com.android.support:design:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/2fe83e33edc59ca770afe28f0c13b209/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/2fe83e33edc59ca770afe28f0c13b209/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/03e6188da2fbe7408f7026eab58fa593/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/03e6188da2fbe7408f7026eab58fa593/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/d4b804e8b32e87380a29f517b0888c12/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/d4b804e8b32e87380a29f517b0888c12/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/eaa82dc3fd0ff5577441b11d4734705a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/eaa82dc3fd0ff5577441b11d4734705a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/c6b5cac28c2606a5809e9285a1bf14be/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/c6b5cac28c2606a5809e9285a1bf14be/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/eb8cac63a5f57a97c6d050b1b4fbf637/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/eb8cac63a5f57a97c6d050b1b4fbf637/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/877393f58d9b671d91ba2b3f80eb4fde/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/877393f58d9b671d91ba2b3f80eb4fde/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/b65ae57309c5a01f0f3df3d1960c31a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/b65ae57309c5a01f0f3df3d1960c31a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/8fddcd8be97cde8ad0506dc81cd148b8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/8fddcd8be97cde8ad0506dc81cd148b8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/48cdc0e761e590e2503dbb32cec9d86f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/48cdc0e761e590e2503dbb32cec9d86f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/eb0a0ad483fffae04942a8c8e39f40ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/eb0a0ad483fffae04942a8c8e39f40ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/d22582fd7539391d59c6d9b9702d418b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/d22582fd7539391d59c6d9b9702d418b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/usuario/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/ed83811050497e8767229348d76ee104/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/usuario/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/ed83811050497e8767229348d76ee104/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:22:5-44
+INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:22:5-44
+	android:targetSdkVersion
+		INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml
+		ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:22:5-44
+		INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:22:15-41
+		INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml
+		INJECTED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml
+application
+ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:24:5-37:19
+	android:label
+		ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:24:18-50
+	android:icon
+		ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:25:9-45
+	android:theme
+		ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:26:9-70
+activity#com.example.android.effectivenavigation.MainActivity
+ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:28:9-33:20
+	android:label
+		ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:28:48-80
+	android:name
+		ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:28:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:29:13-32:29
+action#android.intent.action.MAIN
+ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:31:17-77
+	android:name
+		ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:31:27-74
+activity#com.example.android.effectivenavigation.CollectionDemoActivity
+ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:35:9-100
+	android:label
+		ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:35:58-97
+	android:name
+		ADDED from /home/usuario/Escritorio/Dump/Git/EffectiveNavigation/app/src/main/AndroidManifest.xml:35:19-57
