@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<empleados>
+    <empleado>
+        <nombre>Paco Contreras</nombre>
+        <puesto>Jefe de departamento</puesto>
+        <edad>38</edad>
+        <sueldo>1500</sueldo>
+    </empleado>
+    <empleado>
+        <nombre>Antonio Martinez</nombre>
+        <puesto>Marketing</puesto>
+        <edad>37</edad>
+        <sueldo>1200</sueldo>
+    </empleado>
+    <empleado>
+        <nombre>Juan Garcia</nombre>
+        <puesto>Jefe de ventas</puesto>
+        <edad>38</edad>
+        <sueldo>1250</sueldo>
+    </empleado>
+    <empleado>
+        <nombre>Maria Canas</nombre>
+        <puesto>Gestora</puesto>
+        <edad>30</edad>
+        <sueldo>1200</sueldo>
+    </empleado>
+    <empleado>
+        <nombre>Eustaquio Rodriguez</nombre>
+        <puesto>Recursos Humanos</puesto>
+        <edad>52</edad>
+        <sueldo>1200</sueldo>
+    </empleado>
+    <empleado>
+        <nombre>Antonio Rodriguez</nombre>
+        <puesto>Repartidor</puesto>
+        <edad>18</edad>
+        <sueldo>900</sueldo>
+    </empleado>
+    <empleado>
+        <nombre>Mario Serrano</nombre>
+        <puesto>Asesor</puesto>
+        <edad>25</edad>
+        <sueldo>1100</sueldo>
+    </empleado>
+</empleados>

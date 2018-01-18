@@ -1,6 +1,7 @@
 package com.example.trabajosobrefcheros;
 
 import android.app.ProgressDialog;
+import android.graphics.Region;
 import android.os.Debug;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -33,6 +34,7 @@ import java.util.Date;
 
 
 public class MainActivity extends AppCompatActivity {
+
     private EditText edtURLImg;
     private EditText edtURLFrases;
     private TextView txtFrases;
@@ -70,20 +72,45 @@ public class MainActivity extends AppCompatActivity {
                 obtenerTiempo();
 
                 try {
-                    Thread.sleep(2000); //Al parecer debemos darle tiempo a que descarge los datos por que a veces falla
                     if (hdl != null) {
-                        hdl.removeCallbacksAndMessages(null);
+                        hdl.removeCallbacksAndMessages(null);//Limpia el Handler de la ejecucion anterior
                     }
-                    iniciar();
-                } catch (InterruptedException e) {
-                    Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-
+                    iniciar();//Inicia el Handler
                 } catch (Exception e) {
                     Toast.makeText(MainActivity.this, "Error en la obtencion de datos", Toast.LENGTH_SHORT).show();
                 }
             }
         });
     }
+
+    /**
+     https://developer.android.com/reference/android/os/Handler.html
+     https://stackoverflow.com/questions/5229444/use-of-handler-android
+     https://es.stackoverflow.com/questions/38201/diferencia-entre-runnable-handler-thread
+     http://www.vogella.com/tutorials/AndroidBackgroundProcessing/article.html#handler
+
+     Usa un handler el cual de manera al hilo principal que atinende al usuario, va avanzando las imagenes
+     */
+    private void iniciar() {
+        hdl = new Handler();
+        hdl.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    nextImage(imagenPos % imagenes.size());
+                    imagenPos++;
+                    txtFrases.setText(frases.get(frasePos% frases.size()));
+                    frasePos++;
+                }catch (ArithmeticException e)
+                {}
+                hdl.postDelayed(this, tiempo);
+            }
+        },tiempo);
+    }
+
+    /**
+     * Lee el tiempo en el archivo tiempo
+     */
     private void obtenerTiempo() {
         InputStream is = this.getResources().openRawResource(R.raw.tiempo);
         InputStreamReader isr = new InputStreamReader(is);
@@ -98,27 +125,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-    private void escribirFicheroError(String error) {
-        AsyncHttpClient cliente = new AsyncHttpClient();
-        cliente.setTimeout(2000);
-        cliente.setMaxRetriesAndTimeout(1, 5000);
-        RequestParams params = new RequestParams();
-        params.put("lineaError", error);
 
-        cliente.post("http://alumno.mobi/~alumno/superior/benitez/Errores.php", params, new TextHttpResponseHandler() {
-            @Override
-            public void onFailure(int statusCode, cz.msebera.android.httpclient.Header[] headers, String responseString, Throwable throwable) {
 
-                Toast.makeText(MainActivity.this, "No se ha podido subir el error", Toast.LENGTH_SHORT).show();
-
-            }
-
-            @Override
-            public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, String responseString) {
-                Toast.makeText(MainActivity.this, "El error ha sido subido", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
+    /**
+     * Descarga el fichero imagenes y lee las lineas del mismo, estas lineas son los enlaces de referencia a imagenes
+     * @param url
+     */
     private void descargarImagenes(final String url) {
         final ProgressDialog progreso = new ProgressDialog(this);
         final AsyncHttpClient cliente = new AsyncHttpClient();
@@ -165,9 +177,15 @@ public class MainActivity extends AppCompatActivity {
 
             });
     }
+
+    /**
+     * Descarga el fichero frases y lee las lineas del mismo, estas lineas son las frases que se muestran
+     * @param url
+     */
     private void descargarFichero(final String url) {
         final ProgressDialog progreso = new ProgressDialog(this);
         final AsyncHttpClient cliente = new AsyncHttpClient();
+
         cliente.setTimeout(2000);
         cliente.setMaxRetriesAndTimeout(1, 5000);
 
@@ -211,24 +229,41 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    //Muestra la imagen del array de imagenes dado su posicion
     private void nextImage(int i) {
         Picasso.with(getApplicationContext()).load(imagenes.get(i)).placeholder(R.drawable.placeholder).error(R.drawable.placeholder_error)
                 .resize(300, 300).into(imgvImagenes);
     }
-    private void iniciar() {
-        hdl = new Handler();
-        hdl.postDelayed(new Runnable() {
+
+    /**
+     * Escribe en un fichero error.txt mediante un archivo php (Errores.php)
+     * Fichero PHP->
+     * < ?php
+     //tomamos la linea de error y añadimos un salto de linea
+     $linea = $_POST["lineaError"]."\r\n";
+     //metodo de php, que escribe una cadena en un fichero.
+     //file_put_contents(nombre de fichero, valor a añadir al fichero, metodo de añadido(en este caso usamos File_append, que añade la linea al fichero))
+     file_put_contents("errores.txt", $linea, FILE_APPEND);
+     ?>
+     * @param error
+     */
+    private void escribirFicheroError(String error) {
+        AsyncHttpClient cliente = new AsyncHttpClient();
+        cliente.setTimeout(2000);
+        cliente.setMaxRetriesAndTimeout(5, 5000);
+        RequestParams params = new RequestParams();
+        params.put("lineaError", error);
+
+        cliente.post("http://alumno.mobi/~alumno/superior/benitez/Errores.php", params, new TextHttpResponseHandler() {
             @Override
-            public void run() {
-                try {
-                    nextImage(imagenPos % imagenes.size());
-                    imagenPos++;
-                    txtFrases.setText(frases.get(frasePos% frases.size()));
-                    frasePos++;
-                }catch (ArithmeticException e)
-                {}
-                hdl.postDelayed(this, tiempo);
+            public void onFailure(int statusCode, cz.msebera.android.httpclient.Header[] headers, String responseString, Throwable throwable) {
+                Toast.makeText(MainActivity.this, "No se ha podido subir el error", Toast.LENGTH_SHORT).show();
             }
-        },tiempo);
+            @Override
+            public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, String responseString) {
+                Toast.makeText(MainActivity.this, "El error ha sido subido", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

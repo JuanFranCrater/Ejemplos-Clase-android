@@ -1,0 +1,86 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT5 - Interfaz Avanzada/ejemplos apuntes/NinePatch/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT5 - Interfaz Avanzada/ejemplos apuntes/NinePatch/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "2,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "76,136",
+                        "endLines": "2,11",
+                        "endColumns": "58,12",
+                        "endOffsets": "130,573"
+                    },
+                    "to": {
+                        "startLines": "10,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "413,471",
+                        "endLines": "10,18",
+                        "endColumns": "57,12",
+                        "endOffsets": "466,908"
+                    }
+                },
+                {
+                    "source": "/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT5 - Interfaz Avanzada/ejemplos apuntes/NinePatch/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "2,9,7,3,4,5,8,6",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "17,338,269,65,118,169,303,235",
+                        "endColumns": "47,36,33,52,50,65,34,33",
+                        "endOffsets": "60,370,298,113,164,230,333,264"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,103,140,174,227,278,344,379",
+                        "endColumns": "47,36,33,52,50,65,34,33",
+                        "endOffsets": "98,135,169,222,273,339,374,408"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/usuario/Escritorio/NinePatch/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/usuario/Escritorio/NinePatch/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "2,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "76,136",
+                        "endLines": "2,11",
+                        "endColumns": "58,12",
+                        "endOffsets": "130,573"
+                    },
+                    "to": {
+                        "startLines": "10,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "413,471",
+                        "endLines": "10,18",
+                        "endColumns": "57,12",
+                        "endOffsets": "466,908"
+                    }
+                },
+                {
+                    "source": "/home/usuario/Escritorio/NinePatch/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "2,9,7,3,4,5,8,6",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "17,338,269,65,118,169,303,235",
+                        "endColumns": "47,36,33,52,50,65,34,33",
+                        "endOffsets": "60,370,298,113,164,230,333,264"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,103,140,174,227,278,344,379",
+                        "endColumns": "47,36,33,52,50,65,34,33",
+                        "endOffsets": "98,135,169,222,273,339,374,408"
+                    }
+                }
+            ]
+        }
+    ]
+}

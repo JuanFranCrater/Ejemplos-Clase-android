@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Android/Sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT5 - Interfaz Avanzada/ejemplos apuntes/NinePatch/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-18.0.0_0468f7d0948102a58885bb06968391492fcbe6f6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT5 - Interfaz Avanzada/ejemplos apuntes/NinePatch/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="936a34ef5e21de7aeeb6e1247cde056b2a81ed06">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT5 - Interfaz Avanzada/ejemplos apuntes/NinePatch/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_6cc5fc0a7ed2d2f0bd664511566f59f8b58d7c6e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT5 - Interfaz Avanzada/ejemplos apuntes/NinePatch/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3ec8006ddb10654e3fc9825e000f77c5efec8b47">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT5 - Interfaz Avanzada/ejemplos apuntes/NinePatch/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3f572f7f609406ddf34c2f8c32275fa3a663c8f4/classes.dex" />
+    </item>
+
+</items>
