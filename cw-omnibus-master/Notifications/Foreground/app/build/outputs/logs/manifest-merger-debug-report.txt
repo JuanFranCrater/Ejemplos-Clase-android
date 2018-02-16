@@ -1,0 +1,132 @@
+-- Merging decision tree log ---
+provider#com.commonsware.android.foredown.LegacyCompatFileProvider
+INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:36:3-44:14
+	android:grantUriPermissions
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:40:4-38
+	android:authorities
+		INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:38:4-51
+	android:exported
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:39:4-28
+	android:name
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:37:4-43
+manifest
+ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:2:1-47:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/12ae30081d799e05dd5611725b0e858a/AndroidManifest.xml:17:1-31:12
+MERGED from [com.commonsware.cwac:provider:0.5.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/provider-0.5.2.aar/514e4634e97be4e5f6ed3814f63fc1d1/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:support-compat:26.1.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/38b19cdc2f3d504a05148babb5ee53de/AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/e183a2263fe9469ab0af99508ea3e017/AndroidManifest.xml:17:1-30:12
+INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:2:1-47:12
+	package
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:3:2-44
+	android:versionName
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:5:2-27
+		INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml
+		INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:4:2-25
+		INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml
+		INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml
+supports-screens
+ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:7:2-11:32
+	android:largeScreens
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:9:3-30
+	android:smallScreens
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:11:3-30
+	android:normalScreens
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:10:3-31
+	android:anyDensity
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:8:3-28
+uses-sdk
+ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:13:2-15:34
+INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:13:2-15:34
+INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:13:2-15:34
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/12ae30081d799e05dd5611725b0e858a/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/12ae30081d799e05dd5611725b0e858a/AndroidManifest.xml:21:5-23:61
+MERGED from [com.commonsware.cwac:provider:0.5.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/provider-0.5.2.aar/514e4634e97be4e5f6ed3814f63fc1d1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.commonsware.cwac:provider:0.5.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/provider-0.5.2.aar/514e4634e97be4e5f6ed3814f63fc1d1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-compat:26.1.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/38b19cdc2f3d504a05148babb5ee53de/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/38b19cdc2f3d504a05148babb5ee53de/AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/e183a2263fe9469ab0af99508ea3e017/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/e183a2263fe9469ab0af99508ea3e017/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:13:2-15:34
+INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:13:2-15:34
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-core-utils:26.1.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/12ae30081d799e05dd5611725b0e858a/AndroidManifest.xml:23:9-58
+	android:targetSdkVersion
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:15:3-32
+		INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml
+		INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:14:3-29
+		INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml
+		INJECTED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:17:2-63
+	android:name
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:17:19-61
+uses-permission#android.permission.VIBRATE
+ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:18:2-62
+	android:name
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:18:19-60
+application
+ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:20:2-45:16
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/12ae30081d799e05dd5611725b0e858a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/12ae30081d799e05dd5611725b0e858a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.commonsware.cwac:provider:0.5.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/provider-0.5.2.aar/514e4634e97be4e5f6ed3814f63fc1d1/AndroidManifest.xml:11:5-20
+MERGED from [com.commonsware.cwac:provider:0.5.2] /home/usuario/.gradle/caches/transforms-1/files-1.1/provider-0.5.2.aar/514e4634e97be4e5f6ed3814f63fc1d1/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-compat:26.1.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/38b19cdc2f3d504a05148babb5ee53de/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/38b19cdc2f3d504a05148babb5ee53de/AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/e183a2263fe9469ab0af99508ea3e017/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/e183a2263fe9469ab0af99508ea3e017/AndroidManifest.xml:24:5-28:19
+	android:label
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:22:3-35
+	android:icon
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:21:3-39
+	android:theme
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:23:3-64
+activity#com.commonsware.android.foredown.DownloaderDemo
+ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:24:3-32:14
+	android:label
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:26:4-36
+	android:name
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:25:4-33
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:27:4-31:20
+action#android.intent.action.MAIN
+ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:28:5-56
+	android:name
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:28:13-54
+category#android.intent.category.LAUNCHER
+ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:30:5-64
+	android:name
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:30:15-62
+service#com.commonsware.android.foredown.Downloader
+ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:34:3-39
+	android:name
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:34:12-37
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:41:4-43:45
+	android:resource
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:43:5-43
+	android:name
+		ADDED from /home/usuario/Escritorio/cw-omnibus-master/Notifications/Foreground/app/src/main/AndroidManifest.xml:42:5-55
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-core-utils:26.1.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/12ae30081d799e05dd5611725b0e858a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/38b19cdc2f3d504a05148babb5ee53de/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/38b19cdc2f3d504a05148babb5ee53de/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:support-core-utils:26.1.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/12ae30081d799e05dd5611725b0e858a/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:support-core-utils:26.1.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/12ae30081d799e05dd5611725b0e858a/AndroidManifest.xml:27:13-51
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/e183a2263fe9469ab0af99508ea3e017/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/e183a2263fe9469ab0af99508ea3e017/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/usuario/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/e183a2263fe9469ab0af99508ea3e017/AndroidManifest.xml:26:13-58

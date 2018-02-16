@@ -1,0 +1,17 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+    implementation 'com.android.support:support-v13:24.2.0'
+    implementation 'com.evernote:android-job:1.0.11'
+}
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 24
+        applicationId "com.commonsware.android.job.dispatcher"
+    }
+}

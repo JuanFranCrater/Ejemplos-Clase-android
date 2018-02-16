@@ -1,0 +1,19 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+  implementation 'io.reactivex.rxjava2:rxjava:2.1.5'
+}
+
+android {
+  compileSdkVersion 25
+
+  defaultConfig {
+    minSdkVersion 15
+    targetSdkVersion 25
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+}

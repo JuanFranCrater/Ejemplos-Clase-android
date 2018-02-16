@@ -1,0 +1,18 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        testApplicationId "com.commonsware.android.unittest.tests"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+}
+
+dependencies {
+    implementation 'com.squareup.retrofit:retrofit:1.6.1'
+    implementation 'de.greenrobot:eventbus:2.2.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:rules:0.4.1'
+}

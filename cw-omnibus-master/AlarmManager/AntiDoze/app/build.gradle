@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.android.support:support-compat:26.1.0'
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+	  defaultConfig {
+        minSdkVersion 19
+		    targetSdkVersion 26
+	  }
+
+    flavorDimensions "default"
+
+    productFlavors {
+        foreground {
+            dimension "default"
+            buildConfigField "boolean", "IS_FOREGROUND", "true"
+        }
+
+        normal {
+            dimension "default"
+            buildConfigField "boolean", "IS_FOREGROUND", "false"
+        }
+    }
+}

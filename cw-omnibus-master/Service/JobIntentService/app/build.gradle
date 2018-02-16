@@ -1,0 +1,16 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+	implementation 'com.android.support:support-v13:26.0.0'
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+		defaultConfig {
+			minSdkVersion 15
+			targetSdkVersion 26
+      applicationId 'com.commonsware.android.downloader.jis'
+		}
+}

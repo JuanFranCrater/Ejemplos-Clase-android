@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.commonsware.cwac:provider-0.5.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/provider-0.5.2.aar/514e4634e97be4e5f6ed3814f63fc1d1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/provider-0.5.2.aar/514e4634e97be4e5f6ed3814f63fc1d1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.commonsware.cwac/provider/0.5.2/feb6c3a5bea65379ee81548f8230cb99430f1a53/provider-0.5.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

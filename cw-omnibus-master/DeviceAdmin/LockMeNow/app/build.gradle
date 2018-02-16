@@ -1,0 +1,9 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '26.0.2'
+}
